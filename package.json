@@ -1,0 +1,19 @@
+{
+  "name": "webmini-bilibili",
+  "description": "哔哩哔哩",
+  "author": "liumingye <liumingye2015@gmail.com>",
+  "license": "MIT",
+  "version": "0.0.1",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "path": "^0.12.7",
+    "typescript": "^4.6.2",
+    "vite": "^2.8.6"
+  }
+}
