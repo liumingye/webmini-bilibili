@@ -7,7 +7,7 @@ import {
   getPartOfBangumi,
   getPartOfVideo,
 } from './utils'
-import { resolve } from 'path'
+import path from 'path'
 
 export const plugin = {
   name: 'bilibili',
@@ -20,7 +20,7 @@ export const plugin = {
     't.bilibili.com',
     'link.bilibili.com',
   ],
-  preloads: [resolve(__dirname, '../../resources/plugins/bilibili/dist/index.cjs')],
+  preloads: [path.resolve(__dirname, './preload/index.js')],
   load: ({ addHook, addData, application, webContents, net }) => {
     const last = {
       vid: '',

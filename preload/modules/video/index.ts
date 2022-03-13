@@ -1,8 +1,8 @@
-import { ipcRenderer } from 'electron'
 import style from './style.less?inline'
 
 const addStyle = (window as any).utils.addStyle
 const whenDom = (window as any).utils.whenDom
+const ipcRenderer = (window as any).utils.ipcRenderer
 
 let unloadStyle: null | (() => void)
 let abortPromise: null | (() => void)

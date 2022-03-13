@@ -1,12 +1,11 @@
-import { ipcRenderer } from 'electron'
 import { is } from './utils'
 import { search, adblock, video, home, live } from './modules'
 
 const addStyle = (window as any).utils.addStyle
+const ipcRenderer = (window as any).utils.ipcRenderer
 
 const applyScript = () => {
   console.log('applyScript - bilibili')
-  console.log('applyScript')
   const location = window.location
   const simpleHref = location.hostname + location.pathname
   const liveId = /live\.bilibili\.com\/(\d+)/.exec(simpleHref)
@@ -14,7 +13,6 @@ const applyScript = () => {
     location.href = `https://live.bilibili.com/blanc/${liveId[1]}?liteVersion=true`
   }
   // 脚本开始
-  console.log('脚本注入成功！！！')
   adblock.start()
   // 普通视频页：自动最大化播放器
   if (is.video(simpleHref)) {
