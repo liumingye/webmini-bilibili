@@ -1,6 +1,6 @@
 {
   "name": "webmini-bilibili",
-  "description": "哔哩哔哩",
+  "description": "webmini-bilibili",
   "author": "liumingye <liumingye2015@gmail.com>",
   "license": "MIT",
   "version": "0.0.2",
@@ -17,6 +17,7 @@
   "devDependencies": {
     "@types/node": "^17.0.21",
     "less": "^4.1.2",
+    "path": "^0.12.7",
     "typescript": "^4.6.0",
     "vite": "^2.8.6"
   },
