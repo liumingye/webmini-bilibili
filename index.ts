@@ -8,12 +8,10 @@ import {
   getPartOfVideo,
 } from "./utils";
 import path from "path";
+import pkg from "./package.json";
 
 export const plugin = {
-  name: "bilibili",
-  homepage: "https://m.bilibili.com/",
-  icon: "https://static.hdslb.com/mobile/img/512.png",
-  displayName: "哔哩哔哩",
+  name: pkg.name,
   urlInclude: [
     "www.bilibili.com",
     "m.bilibili.com",

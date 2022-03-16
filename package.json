@@ -1,9 +1,12 @@
 {
   "name": "webmini-bilibili",
-  "description": "webmini-bilibili",
+  "description": "哔哩哔哩视频",
+  "displayName": "哔哩哔哩",
+  "start": "https://m.bilibili.com/",
+  "icon": "https://static.hdslb.com/mobile/img/512.png",
   "author": "liumingye <liumingye2015@gmail.com>",
   "license": "MIT",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "files": [
     "dist/*"
   ],
