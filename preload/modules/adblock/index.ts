@@ -8,7 +8,7 @@ const module = {
   start: (): void => {
     module.stop()
     const styleEntry = addStyle(style)
-    console.log(style)
+    // console.log(style)
     unloadStyle = styleEntry.unload
   },
 
