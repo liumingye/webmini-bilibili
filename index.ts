@@ -164,9 +164,11 @@ export const plugin = {
     addData("themeColor", (presetBase) => {
       presetBase.light = {
         bg: "#f36f98",
+        text: "#fff",
       };
       presetBase.dark = {
         bg: "#f36f98",
+        text: "#fff",
       };
     });
 
