@@ -6,7 +6,7 @@
   "icon": "https://static.hdslb.com/mobile/img/512.png",
   "author": "liumingye <liumingye2015@gmail.com>",
   "license": "MIT",
-  "version": "0.0.10",
+  "version": "0.0.13",
   "files": [
     "dist/*"
   ],
