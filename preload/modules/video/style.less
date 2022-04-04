@@ -10,13 +10,13 @@ body {
     left: 0;
     top: 0;
     // 控制栏加高
-    @heighten1: 20px;
+    @squirtle-heighten: 20px;
 
     .squirtle-controller {
-      height: 44px + @heighten1;
+      height: 44px + @squirtle-heighten;
 
       .squirtle-controller-wrap {
-        height: 29px + @heighten1;
+        height: 29px + @squirtle-heighten;
       }
     }
   }
@@ -38,17 +38,16 @@ body {
     zoom: 0.8;
   }
 
-  @heighten2: 0;
   body {
     .bpx-player-control-wrap {
-      height: 44px + @heighten2;
+      height: 44px;
 
       .bpx-player-control-top {
-        bottom: 32px + @heighten2;
+        bottom: 32px;
       }
 
       .bpx-player-control-bottom {
-        height: 29px + @heighten2;
+        height: 29px;
       }
     }
   }
@@ -56,17 +55,17 @@ body {
 
 @media (min-width: 380px) {
   // 加高控制栏
-  @heighten2: 6px;
+  @player-heighten: 6px;
   body {
     .bpx-player-control-wrap {
-      height: 44px + @heighten2;
+      height: 44px + @player-heighten;
 
       .bpx-player-control-top {
-        bottom: 32px + @heighten2;
+        bottom: 32px + @player-heighten;
       }
 
       .bpx-player-control-bottom {
-        height: 29px + @heighten2;
+        height: 29px + @player-heighten;
       }
     }
   }
@@ -92,11 +91,10 @@ body {
   display: none !important;
 }
 // 移除选集按钮
-.bpx-player-ctrl-eplist,
-// .bilibili-player-video-btn-pagelist,
-.squirtle-pagelist-wrap {
-  display: none !important;
-}
+// .bpx-player-ctrl-eplist,
+// .squirtle-pagelist-wrap {
+//   display: none !important;
+// }
 // 隐藏视频标题层
 // .bilibili-player-video-top,
 .bpx-player-top-wrap {

@@ -1,3 +1,5 @@
+import type { PluginApiParameters } from "webmini-types";
+
 export const videoUrlPrefix = "https://www.bilibili.com/video/";
 export const bangumiUrlPrefix = "https://www.bilibili.com/bangumi/play/";
 export const liveUrlPrefix = "https://live.bilibili.com/blanc/";
@@ -12,7 +14,11 @@ export const getBvid = (pathname: string): string | null => {
   return m ? m[1] : null;
 };
 
-export const getPartOfBangumi = (application, net, bvid: string): void => {
+export const getPartOfBangumi = (
+  application: PluginApiParameters["application"],
+  net: PluginApiParameters["net"],
+  bvid: string
+): void => {
   net.fetch(bangumiUrlPrefix + bvid).then((res) => {
     res.text().then((res) => {
       // 分 P 信息存储在 window.__INITIAL_STATE__= 中 根据 object 类型的特性最后一个 } 后面不会有 , ] } 使用正则匹配
@@ -67,7 +73,11 @@ export const getPartOfBangumi = (application, net, bvid: string): void => {
   });
 };
 
-export const getPartOfVideo = (application, net, vid: string): void => {
+export const getPartOfVideo = (
+  application: PluginApiParameters["application"],
+  net: PluginApiParameters["net"],
+  vid: string
+): void => {
   net.fetch(videoUrlPrefix + vid).then((res) => {
     res.text().then((res) => {
       // 分 P 信息存储在 window.__INITIAL_STATE__= 中 根据 object 类型的特性最后一个 } 后面不会有 , ] } 使用正则匹配

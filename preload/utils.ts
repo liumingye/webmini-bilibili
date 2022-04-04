@@ -7,14 +7,3 @@ export const is = {
   login: (href: string): boolean => /^passport\.bilibili.com\/login/.test(href),
   search: (href: string): boolean => /^m\.bilibili\.com\/search\?/.test(href),
 }
-
-export const addStyle = (text: string) => {
-  const style = document.createElement('style')
-  style.textContent = text
-  const styleElement = <HTMLStyleElement>document.head.insertAdjacentElement('beforeend', style)
-  return {
-    unload: () => {
-      styleElement.remove()
-    },
-  }
-}
